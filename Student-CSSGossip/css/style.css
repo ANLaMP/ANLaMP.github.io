@@ -26,12 +26,12 @@ span.colors{
 span.more{
     color: blue;
     text-decoration: underline;
-    border: 1px, dashed, gray;
+    border: 1px dashed gray;
     background-color: #D69BBE;
 }
 span.backgrounds{
     color: green;
-    font: 'Trebuchet MS', sans serif;
+    font: trebuchet, sans serif;
     font-size: 1.25em;
 }
 article ul {
@@ -45,7 +45,7 @@ article ul {
 }
 nav{
     width: 175px;
-    background-color: E7DBF6;
+    background-color: #E7DBF6;
     float: left;
 }
 article{
