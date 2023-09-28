@@ -14,7 +14,7 @@ h3{
 }
 span.fonts{
     color: orange;
-    font-family: 'comic sans ms', sans serif;
+    font-family: 'comic sans ms', 'sans serif';
     font-size: 1.5em;
     font-style: italic;
     font-weight: bold;
@@ -31,7 +31,7 @@ span.more{
 }
 span.backgrounds{
     color: green;
-    font: trebuchet, sans serif;
+    font: 'trebuchet ms', 'sans serif';
     font-size: 1.25em;
 }
 article ul {
