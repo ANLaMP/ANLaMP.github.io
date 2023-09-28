@@ -1,0 +1,51 @@
+
+body {
+ background: crimson; 
+}
+
+div {
+  transform: translate(90px, 100px);
+}
+#outerwrapper {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-style: dotted;
+}
+h2:first-of-type {
+  background-color: lawngreen;
+  color: magenta;
+  font: message-box;
+  rotate: 5deg;
+}
+ h3 {
+  padding-left: .5em;
+}
+
+/* add nth-child(odd) to target ul li */
+li:nth-child(odd) {
+  font-style: italic;
+  font-family: fantasy;
+}
+
+/* order-based selectors to the anchor tag*/
+a:link {
+  color: orchid;
+}
+a:visited {
+  color: peachpuff;
+}
+a:hover {
+  color: yellow;
+}
+a:active {
+  color: aqua;
+}   :link, :visited, :hover, :active */
+
+
+footer
+{
+  background: #ffffff; 
+  text-align: center;
+  padding: .25em;
+}
