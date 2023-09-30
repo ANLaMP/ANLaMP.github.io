@@ -1,0 +1,29 @@
+/*9.14.2023
+Anthony Patterson*/
+.body{
+hanging-punctuation:first;
+outline: 10px;
+color: aqua;
+background: yellow;
+}
+.bigtime {
+    color: blanchedalmond;
+    background-color: brown;
+}
+.razzdazzle{
+    font-size: 32px;
+    background-color: fuchsia;
+}
+.alert{
+    background-color: seagreen;
+    color: orangered;
+    font-weight: bolder;
+    padding-right: 10px;
+}
+.alert.gib{
+    font-size: larger;
+}
+.mussly{
+    color: yellow;
+    text-align: center;
+}
