@@ -1,0 +1,29 @@
+/* 9.14.2023 Anthony Patterson*/
+header {
+   background-color: blueviolet;
+}
+footer {
+    background-color: blueviolet;
+}
+p {
+    font-size: 20px;
+}
+ul {
+    font-size: 20px;
+}
+li {
+    font-size: 20px;
+}
+a:link{
+color: darkorchid;
+
+}
+a:visited{
+    color: bisque;
+}
+a:hover{
+    color: goldenrod;
+}
+a:active{
+    color: aquamarine;
+}
