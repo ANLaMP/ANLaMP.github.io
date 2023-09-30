@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {
+ background: #3bfb00; 
+}	
+
+.tableStyle {
+  border: 9px solid #ff1003;
+  background-color: #8ecae6;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  font-size: 23px;
+}
+
+
+caption {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+thead {
+	background-color: #219ebc;
+}
+
+tr:nth-child(odd) {
+  background: #D0E4F5;
+}
+
+tfoot {
+	text-align: center;
+  color: salmon;
+	background-color: #023047;
+}
+a:link {
+  color: pink;
+
+}
+a:visited {
+color: firebrick;
+}
+a:hover {
+color: honeydew;
+}
+a:active {
+color: teal;
+}
