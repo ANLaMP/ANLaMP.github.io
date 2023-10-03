@@ -1,0 +1,66 @@
+/*3 Oct 2023
+Anthony Patterson*/
+
+body {
+	background-color:  #B8D1EB;
+	color: #000000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+	background-color: #C5A98B;
+	padding: 10px;
+}
+
+
+#outerwrapper {
+
+	max-height: 70%;
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+float: left;
+margin-right: 3%;
+
+}
+
+.floatright {
+float: right;
+margin-left: 3%;
+
+}
+
+nav ul {
+	list-style-type: none;
+
+}
+
+h1 {
+	font-family: Garamond, serif;
+	font-size: 5em;
+}
+
+h2 {
+	font-family: 'Brush Script MT', cursive;
+	font-weight: normal;
+	font-style: italic;
+}
+
+main ul {
+		list-style-image: url(../images/tomato.png);
+
+}
+
+main, footer { 
+clear: both;
+}
+
+footer {
+	font-size: .75em;
+	text-align: center;
+	background-color: #542f05;
+	padding: 10px 10px; 
+}
