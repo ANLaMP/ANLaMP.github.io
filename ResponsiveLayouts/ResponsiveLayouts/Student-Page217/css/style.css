@@ -1,0 +1,105 @@
+/*11.3.2023
+Anthony Patterson*/
+body{
+    background: FF0000;
+    color: FFFFFF;
+}
+@media screen and (min-width: 600px){
+    body{
+        background: 0000FF;
+    }
+}
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 15px;
+}
+@media screen and (max-width: 599px) {
+    div {
+        display: block;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 600px) {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        padding: 15px;
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,→600i,700,700i,800,800i,900,900i&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color:#fcf6e7;
+    margin: 0;
+    padding: 0;
+}
+header,
+footer {
+    background: #282009;
+    color: #FFFFFF;
+    padding: 30px;
+    text-align: center;
+}
+h1 {
+    font-weight: 900;
+}
+main,
+aside {
+    margin: 30px;
+}
+aside {
+    background: #272727;
+    color: #FFFFFF;
+    padding: 30px;
+}
+.byline {
+    font-family: Futura, sans-serif;
+    font-style: italic;
+}
+p {
+    font-size: 18px;
+    margin: 30px 0;
+}
+@media screen and (min-width: 768px){
+    header{ 
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 15px;
+        justify-items: center;
+    }
+}
+@media screen and (min-width: 1000px){
+    header {grid-area: header;}
+    main {grid-area: main;}
+    aside {grid-area: sidebar;}
+    footer {grid-area: footer;}
+    .wrapper{ 
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header header header header header" "main main main main sidebar" "footer footer footer footer footer";
+    }
+}
+
+@media print{
+    body, header, aside, footer{
+        background: #FFFFFF;
+        color: #000000;
+    }
+    .wrapper{
+        display: block;
+        width: 75%;
+        margin: 0% auto;
+    }
+}
+@media screen and (prefers-color-scheme: dark){
+    body, header, aside, footer {
+        background: #272727;
+        color: #FFFFFF;
+        line-height: 2em;
+    }
+}
