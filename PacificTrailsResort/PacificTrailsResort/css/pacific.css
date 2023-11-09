@@ -82,6 +82,7 @@ footer
 	}
 	h2 
 	{ 
+		display: block;
 	color: #3399CC; 
     font-family: Georgia, 'Times New Roman', serif; 
 	}
