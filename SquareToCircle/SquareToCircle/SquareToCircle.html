@@ -1,0 +1,40 @@
+<!--Anthony Patterson
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>    
+    <meta name="author" content="Anthony Patterson">
+    <meta charset="UTF-8">
+    <meta name="description" content="Transformation practice">
+    <meta name="keywords" content="transform circle square">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Red Circle Blue Ball</title>
+<style>
+	div {
+		width: 200px;
+		height: 200px;
+		background: red;
+		animation: switch 4s infinite;
+	}
+	@keyframes switch {
+		0% {
+			background: red;
+			border-radius: 0%;
+		}
+		50% {
+			background: blue;
+			border-radius: 50%;
+		}
+		100% {
+			background: red;
+			border-radius: 0%;
+		}
+	}
+</style>
+</head>
+<body>
+  <div></div>
+
+</body>
+</html>
