@@ -1,0 +1,11 @@
+:root{
+    --font-size: 1.25em;
+    --font-size-heading: calc(var(--font-size)* 3);
+}
+
+body{
+    font-size: var(--font-size);
+}
+h1{
+    font-size: var(--font-size-heading);
+}
