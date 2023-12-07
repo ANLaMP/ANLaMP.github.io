@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Anthony Patterson- Portfolio</title>
+    <meta name="author" content="Anthony Patterson">
+    <meta charset="UTF-8">
+    <meta name="description" content="Anthony Patterson Software app designer Boise Idaho">
+    <meta name="keywords" content="client-side software developer programmer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- Link to Google Fonts (Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<main>
+    <header>
+        <nav>
+            <ul>                
+                <li><a href="./Index.html">Home</a></li>
+                <li><a href="./Experience.html">Skills</a></li>
+                <li><a href="./Samples.html">Samples</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+
+          <h1>Contact Me</h1>
+          <div class="contact">
+  
+            <p>&nbsp;&nbsp;<a href="mailto:anthonypatterson@my.cwi.edu">Email</a></p>
+            <p>&nbsp;&nbsp;<a href="tel:+1234-567-8901">Phone</a></p>
+        </div>
+    <div class="form">
+        <form class="outline" action="mailto:anthonypatterson@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+
+        <fieldset>
+        <legend>How do I contact you?</legend>
+            <div>
+                <label for="company">Company:</label>
+                <input type="text" name="company" id="company" size="25">   
+            </div>
+            <div>
+                <label for="person-contact">Person to contact:</label>
+                <input type="text" name="person contact" id="person-contact"> 
+            </div>
+            <div>
+                <label for="email-address">Email:</label>
+                <input type="email" name="email" id="email-address" placeholder="Email" required="">
+            </div>
+            <div>
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required="">  
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+            <label for="type-of-position">Type of Position</label>
+            <select name="type-of-position" id="type-of-position">
+                <option value="internship">Internship</option>
+                <option value="part-time">Part-Time</option>
+                <option value="full-time">Full-Time</option>
+                <option value="contract">Contract</option>
+                <option value="temporary">Temporary</option>
+                <option value="on-call">On Call</option>
+            </select>
+            <p>How did you find me?</p>
+            <input type="radio" name="find-me" id="linkedin" value="linkedin">
+            <label for="linkedin">LinkedIn</label>
+            <input type="radio" name="find-me" id="job-fair" value="job-fair">
+            <label for="job-fair">Job Fair</label>
+            <input type="radio" name="find-me" id="cwi-corporate-partner" value="cwi-corporate-partner">
+            <label for="cwi-corporate-partner">CWI Corporate Partner</label>
+            <div class="text_area">
+                <textarea name="textarea" placeholder="How should I prepare for this interview?" cols="70" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+    </div>
+    </main>
+   
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright notice -->
+        <p>&copy; 2023 Anthony Patterson. All rights reserved.</p>
+
+        <!-- Footer icons with links to GitHub and LinkedIn -->
+        <div class="footer-icons">
+            <a href="https://github.com/" target="_blank"><img src="./images/githubLogo.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkdinLogo.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+
+</html> 

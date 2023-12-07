@@ -1,0 +1,185 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /
+    color: #333;
+}
+
+/* Add styles for :link, :visited, :hover, :active pseudo-classes */
+a:link,
+a:visited {
+    color: #0088cc; 
+}
+
+a:hover {
+    color: #ffcc33; /* Brighter yellow */
+}
+
+a:active {
+    color: #006600; /* Darker green */
+}
+
+header {
+    background: linear-gradient(to right, #cc88cc, #ffccff);
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #004080; /* Darker blue */
+    color: #ffaa00; /* Brighter yellow */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffaa00; /* Brighter yellow */
+    color: #004080; /* Darker blue */
+}
+
+h1, h2, h3 {
+    color: #ff5500; /* Brighter orange */
+}
+
+section {
+    padding: 50px;
+}
+
+#skills table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#skills, th, td {
+    border: 2px solid #ffaa00; /* Brighter yellow */
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffcc99; /* Lighter pink */
+}
+
+form {
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #004080; /* Darker blue */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #002040; /* Darker blue */
+}
+
+footer {
+    background: #ffcc99; /* Lighter pink */
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+#portfolio {
+    background: #ffebcc; /* Lighter pink */
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#eye {
+    width: 30%;
+    height: auto;
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+.project {
+    flex: 1;
+    background: #004080; /* Darker blue */
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    color: #ff5500; /* Brighter orange */
+}
+
+.project p {
+    color: #333;
+}
+
+.project a {
+    display: inline-block;
+    background: #ff5500; /* Brighter orange */
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #cc3300; /* Darker orange */
+}
+
+body {
+    background-image: url('./images/home.png'); 
+    background-size: cover;
+}
+
+header, footer {
+    background: #ffcc99; /* Lighter pink */
+}
