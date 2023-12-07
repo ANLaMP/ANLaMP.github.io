@@ -130,6 +130,9 @@ footer {
     display: block;
     margin: auto;
 }
+.bold{
+    font-weight: bold;
+}
 .project {
     flex: 1;
     background: #004080; /* Darker blue */
