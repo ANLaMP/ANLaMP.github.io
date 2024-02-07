@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(104, 3, 3);
+    color: rgb(154, 132, 10);
+}
+h1{
+    text-align: center;
+}
+nav ul {
+	list-style-type: none;    
+}
+#outerwrapper {
+    background-color: rgb(46, 3, 3);
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.indexImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10px;
+}
