@@ -1,0 +1,35 @@
+/*11 Feb, 2024 - Changed the nav css to horizontal and centered for cleaner look*/
+body{
+    background-color: rgb(104, 3, 3);
+    color: rgb(154, 132, 10);
+}
+h1{
+    text-align: center;
+    font-size: larger;
+}
+nav {
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+#outerwrapper {
+    background-color: rgb(46, 3, 3);
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.indexImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10px;
+}

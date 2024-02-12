@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:medium;
+    background-color: rgb(104, 3, 3);
+    color: rgb(154, 132, 10);
+    width: 550px;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+h1 { 
+    font-size:larger;
+}
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size:medium;
+    padding: .25em 0 .25em 25px;
+    cursor: pointer;
+}
+a {
+    color: rgb(154, 132, 10);
+    text-decoration: none; 
+}
+a:focus, a:hover { 
+	color:  #004080; 
+}
+div {
+    display: none;
+}
+div.open {
+    display: block;
+}
+p {
+    padding-bottom: .25em;
+    padding-left: 25px;
+}
+.faqImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
