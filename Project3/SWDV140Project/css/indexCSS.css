@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(to bottom, rgba(104, 3, 3), rgba(46, 3, 3));
+    color: rgb(154, 132, 10);
+}
+
+h1 {
+    text-align: center;
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(46, 3, 3);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(154, 132, 10);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+    transform: scale(1.05);
+}
+
+#outerwrapper {
+    background-color: rgb(46, 3, 3);
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.indexImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10px;
+}

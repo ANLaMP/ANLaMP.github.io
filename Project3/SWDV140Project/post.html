@@ -1,0 +1,77 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:           Anthony Patterson             #
+#Date Created:              01/25/2024                    #
+#Version:                   2                             #
+#Date Last Modified:        02/08/2024                    #
+#Modified by:               Anthony Patterson             #
+#Modification log:  
+2- added <link href="./css/styles.css">
+2- <nav> <li> ./know.html commented out
+2- 'Join Our Newsletter' changed from <h2> to <h1>
+2- <form> method changed from "get" to "post"
+2- "join_list" input type changed to "submit"
+2- "clear_form" input type changed to "reset"                                 #
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <meta name="author" content="Anthony Patterson">
+    <meta charset="UTF-8">
+    <meta name="description" content="Sentient statue rehabilitation">
+    <meta name="keywords" content="statue talking Chaldea sorcery oracle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" type="text/css" rel="stylesheet">
+    <link href="./css/contactCSS.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./adopt.html">Adopt A Statue Today</a></li>
+                    <!--<li><a href="./know.html">Know A Statue in Need?</a></li> -->
+                    <li><a href="./FAQ.html">Frequently Asked Questions</a></li>
+                    <li><a href="./post.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <h1>Join Our Newsletter</h1>
+            <form id="email_form" name="email_form" action="join.html" method="post"
+                enctype="text/plain">
+                <div>
+                    <label for="email_1">Email Address:</label>
+                    <input type="text" id="email_1" name="email_1" required>
+                </div>
+
+                <div>
+                    <label for="email_2">Confirm Email Address:</label>
+                    <input type="text" id="email_2" name="email_2" required>
+                </div>
+
+                <div>
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+
+                <div>
+                    <label>&nbsp;</label>
+                    <input type="submit" id="join_list" value="Join List">
+                    <input type="reset" id="clear_form" value="Clear Form">
+                </div>
+
+            </form>
+        </div>
+        <script src="./js/postJS.js"></script>
+    </main>
+</body>
+
+</html>

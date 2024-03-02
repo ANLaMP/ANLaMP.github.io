@@ -1,0 +1,23 @@
+/*********************************************************************
+***
+*Original Author:    Anthony Patterson           *
+*Date Created:       02/08/2024                  *
+*Version:            3                           *
+*Date Last Modified: 03/02/2024                  *
+*Modified by:        Anthony Patterson           *
+*Modification log:   
+3- added: #faqs, .faq_items 
+3- removed for use alongside styles.css: *, body, nav, nav ul, nav ul li, a
+a:focus, a:hover, div, div.open, ,faqImage                           *
+***
+******************************************************************** */
+#faqs .faq_items p {
+    display: none;
+} 
+#faqs h1 {
+    margin-bottom: 20px;
+}
+
+#faqs .faq_items h2 {
+    margin-top: 70px;
+}
