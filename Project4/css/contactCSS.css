@@ -1,0 +1,45 @@
+/*********************************************************************
+***
+*Original Author:    Anthony Patterson           *
+*Date Created:       02/08/2024                  *
+*Version:            2                           *
+*Date Last Modified: 03/01/2024                  *
+*Modified by:        Anthony Patterson           *
+*Modification log: 
+2- changed font-family
+2- added: h1, form, label, input, textarea
+2- removed: nav, nav ul, nav ul li, h2,          *
+***
+******************************************************************** */
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+input[type="reset"] {
+    background-color: #b8c0c9;
+    color: white;
+    cursor: pointer;
+}
