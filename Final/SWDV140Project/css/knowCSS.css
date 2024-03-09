@@ -1,0 +1,22 @@
+/*********************************************************************
+***
+*Original Author:    Anthony Patterson           *
+*Date Created:       03/06/2024                  *
+*Version:            1                           *
+*Date Last Modified: 03/06/2024                  *
+*Modified by:        Anthony Patterson           *
+*Modification log:                               *
+***
+******************************************************************** */
+.carousel {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.carousel img {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    border-radius: 50%;
+}
