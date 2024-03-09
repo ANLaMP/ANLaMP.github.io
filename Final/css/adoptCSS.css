@@ -1,0 +1,49 @@
+/*********************************************************************
+***
+*Original Author:    Anthony Patterson           *
+*Date Created:       02/23/2024                  *
+*Version:            1                           *
+*Date Last Modified: 03/01/2024                  *
+*Modified by:        Anthony Patterson           *
+*Modification log:                               *
+***
+******************************************************************** */
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+p {
+    font-size: 24px; 
+    line-height: 1.6; 
+}
+
+.photo_gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery_image {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff; 
+    border-radius: 10px;
+    margin: 10px; 
+    transition: transform 0.2s;
+}
+
+.gallery_image:hover {
+    transform: scale(1.1);
+}
+
+.aboutUs {
+    max-width: 800px;
+    margin: 20px auto; 
+}

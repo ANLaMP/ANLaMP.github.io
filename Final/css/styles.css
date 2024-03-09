@@ -1,0 +1,116 @@
+/*********************************************************************
+***
+*Original Author:    Anthony Patterson           *
+*Date Created:       02/26/2024                  *
+*Version:            3                           *
+*Date Last Modified: 03/08/2024                  *
+*Modified by:        Anthony Patterson           *
+*Modification log: 
+2- file named changed to styles.css
+2- add font-size: larger to h1
+2- add text-align: center
+2- change nav ul
+3- added linear gradient and flex to body 
+3- added styling for datepicker and time picker  
+3- changed position of nav   *
+***
+******************************************************************** */
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #680303, #2e0303);
+    color: #9a840a;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #680303;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin-right: 20px; 
+    border: 2px solid #9a840a;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #9a840a;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+    transform: scale(1.05);
+}
+
+.center_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.center_content p {
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+#homeImage {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#prevButton,
+#nextButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.ui-datepicker {
+    font-size: 14px;
+}
+
+.ui-datepicker-header {
+    background-color: #333;
+    color: #fff;
+}
+
+.ui-timepicker {
+    font-size: 14px;
+}
+
+.aboutUS {
+    max-height: 200px; 
+    overflow-y: auto; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
