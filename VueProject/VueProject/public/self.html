@@ -1,0 +1,65 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:              Anthony Patterson  #
+#Date Created:                         4/20/2024  #
+#Version:                                       3 #
+#Date Last Modified:                   5/08/2024  #
+#Modification log:  
+2- Added a link to an external CSS file "../src/assets/css/global.css"
+2- Removed the <template> tags and its contents
+2- Added a <div> container with the id "app"
+2- Removed the <section> tags and its contents
+3- Changed the <h2> content from "ALL THINGS HAPPEN IN FIVES" to "Oracle Prediction"
+3- Removed the <p> and <ul> tags and their contents inside the <section>
+3- Added a <div> with class "container" and id "app"
+3- Added a <div> with class "oracle" and its contents for Oracle Prediction
+3- Added a <script> tag to include Vue.js from an external source
+3- Added a <script> tag to include a JavaScript file "../js/selfJS.js"                        #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatic Insight Machine</title>
+  <link rel="stylesheet" href="../src/assets/css/global.css">
+</head>
+<body>
+  <h1>The Automatic Insight Machine</h1>  
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./self.html">Know Thyself</a></li>
+        <li><a href="./advice.html">Word from the Wise</a></li>
+        <li><a href="./qna.html">Questions and Answers</a></li>
+        <li><a href="./rebirth.html">Past and Future</a></li>
+        <li><a href="./horoscope.html">Horoscope</a></li>
+    </ul>
+  </nav>
+
+  <div id="app">
+  
+    <div class="oracle">
+      <h2>Oracle Prediction</h2>
+      <p>In What Area of Life Do You Seek Guidance?:</p>
+      <input type="text" v-model="question">
+      <button @click="consultOracle">Consult Oracle</button>
+      <p v-if="oracleGenerated">
+        <strong>Archetype:</strong> {{ oracle.archetype }}<br>
+        <strong>Description:</strong> {{ oracle.archetypeDescription }}<br>
+        <strong>Theme:</strong> {{ oracle.theme }}<br>
+        <strong>Description:</strong> {{ oracle.themeDescription }}
+      </p>
+    </div>
+  </div>
+    <div>
+    <p>Here the magic of AIM comes to life with our one-of-a-kind Oracle Prediction feature</p>
+    <p>Simply input your question into the designated field, click "Consult Oracle," and watch as the wisdom of the ages unfolds before your eyes. Our advanced algorithms will analyze your query and provide you with a personalized oracle prediction tailored to your specific needs.</p>
+    <p>Discover your archetype, unravel the themes at play in your life, and gain a deeper understanding of the forces shaping your destiny. Whether you seek clarity on matters of love, career, or personal growth, with AIM you can't miss!</p>
+    <p>Embark on a journey of self-discovery with the AIM. Your destiny awaits!</p>
+    </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="../js/selfJS.js"></script>
+</body>
+</html>

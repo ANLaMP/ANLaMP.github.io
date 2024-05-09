@@ -1,0 +1,62 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:              Anthony Patterson  #
+#Date Created:                         4/20/2024  #
+#Version:                                       3 #
+#Date Last Modified:                   5/08/2024  #
+#Modification log:  
+2- Added a link to an external CSS file "../src/assets/css/global.css"
+2- Removed the <template> tags and their contents
+2- Removed the <section> tags and their contents
+3- Changed the <h2> content from "OR ARE DIVISIBLE BY FIVE" to "Your Past Life" and "Your Next Life"
+2- Added a <div> container with id "app"
+3- Added JavaScript files "../js/rebirthJS.js"
+------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past&Future</title>
+  <link rel="stylesheet" href="../src/assets/css/global.css">
+  <link rel="stylesheet" href="../src/assets/css/rebirthStyles.css">
+</head>
+<body>
+  <h1>The Automatic Insight Machine</h1> 
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./self.html">Know Thyself</a></li>
+        <li><a href="./advice.html">Word from the Wise</a></li>
+        <li><a href="./qna.html">Questions and Answers</a></li>
+        <li><a href="./rebirth.html">Past and Future</a></li>
+        <li><a href="./horoscope.html">Horoscope</a></li>
+    </ul>
+  </nav>
+  <div id="app">
+    <section>
+      <h2>Your Past Life</h2>
+      <div v-if="pastLifeLoading">Concentrate on your screen...</div>
+      <div v-else>
+        <p>You were born in {{ pastLifeCountry }} as a {{ pastLifeGender }}.</p>
+      </div>
+      <button @click="generatePastLife" :disabled="pastLifeLoading">Generate Past Life</button>
+    </section>
+    <section>
+      <h2>Your Next Life</h2>
+      <div v-if="nextLifeLoading">Concentrate on your screen...</div>
+      <div v-else>
+        <p>You will be born in {{ nextLifeCountry }} as a {{ nextLifeGender }}.</p>
+      </div>
+      <button @click="generateNextLife" :disabled="nextLifeLoading">Generate Next Life</button>
+    </section>
+  </div>
+<div>
+    <p>Would yuo like to explore the mysteries of your past and future lives? AIM provides the unique opportunity to discover insights into your past life and gain glimpses of what awaits you in your next incarnation.</p>
+    <p>Through our advanced algorithms and cutting-edge technology, you can delve deep into the fabric of existence and uncover the hidden threads connecting your past, present, and future selves.</p>
+    <p>Click the "Generate Past Life" button to reveal details about your previous existence. Then, explore the possibilities of your next life by clicking the corresponding button and awaiting the revelation of your future destiny.</p>
+  </div>
+  <script src="https://unpkg.com/vue@3.2.4"></script>
+  <script src="../js/rebirthJS.js"></script>
+</body>
+</html>

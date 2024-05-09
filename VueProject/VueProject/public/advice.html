@@ -1,0 +1,51 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:              Anthony Patterson  #
+#Date Created:                         4/20/2024  #
+#Version:                                       3 #
+#Date Last Modified:                   5/08/2024  #
+#Modification log:  
+2- Added a link to an external CSS file "../src/assets/css/global.css"
+2- Removed the <template> tags and their contents
+2- Removed the <section> tags and their contents
+3- Added a <div> container with id "app"
+3- Added a <button> with an @click event to fetch a new quote
+3- Added JavaScript files "../js/adviceJS.js"      
+3- Updated <p> content to make space for the author of the quote to be named along with the quote                     #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word From The Wise</title>
+  <link rel="stylesheet" href="../src/assets/css/global.css">
+</head>
+<body>
+  <h1>The Automatic Insight Machine</h1> 
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./self.html">Know Thyself</a></li>
+        <li><a href="./advice.html">Word from the Wise</a></li>
+        <li><a href="./qna.html">Questions and Answers</a></li>
+        <li><a href="./rebirth.html">Past and Future</a></li>
+        <li><a href="./horoscope.html">Horoscope</a></li>
+    </ul>
+  </nav>
+  <div id="app">
+    <div>
+      <p>{{ currentQuote }}</p>
+      <p>{{ currentAuthor }}</p>
+    </div>
+    <button @click="fetchQuote">Get Wisdom</button>
+  </div>
+  <div>
+    <p>The wisdom of the ages awaits you at the click of a button with the Automatic Insight Machine!
+      Here, you can access a curated collection of words of wisdom from the greatest minds in history.</p>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="../js/adviceJS.js"></script>
+</body>
+</html>

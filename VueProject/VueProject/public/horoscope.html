@@ -1,0 +1,72 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:              Anthony Patterson  #
+#Date Created:                         4/20/2024  #
+#Version:                                       3 #
+#Date Last Modified:                   5/08/2024  #
+#Modification log:  
+2- Removed the <template> tags and their contents
+2- Removed the <section> tags and their contents
+2- Added SVG background 
+3- Removed SVG background
+3- Removed the Vue.js event listener for scrolling events
+3- Added a label, input field, and button for getting a horoscope
+3- Added conditional rendering for displaying loading status, horoscope, and error message    
+3- Updated to use a drop down menu rather than text input for the zodiac sign         #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/assets/css/global.css">
+  <title>Horoscope</title>
+</head>
+<body>
+  <h1>The Automatic Insight Machine</h1> 
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./self.html">Know Thyself</a></li>
+        <li><a href="./advice.html">Word from the Wise</a></li>
+        <li><a href="./qna.html">Questions and Answers</a></li>
+        <li><a href="./rebirth.html">Past and Future</a></li>
+        <li><a href="./horoscope.html">Horoscope</a></li>
+    </ul>
+  </nav> 
+  <div id="app">
+    <label for="zodiac">Select your zodiac sign:</label>
+    <select id="zodiac" v-model="zodiacInput">
+      <option value="" disabled>Select</option>
+      <option value="Aries">Aries</option>
+      <option value="Taurus">Taurus</option>
+      <option value="Gemini">Gemini</option>
+      <option value="Cancer">Cancer</option>
+      <option value="Leo">Leo</option>
+      <option value="Virgo">Virgo</option>
+      <option value="Libra">Libra</option>
+      <option value="Scorpio">Scorpio</option>
+      <option value="Sagittarius">Sagittarius</option>
+      <option value="Capricorn">Capricorn</option>
+      <option value="Aquarius">Aquarius</option>
+      <option value="Pisces">Pisces</option>
+    </select>
+    <button @click="getHoroscope">Get Horoscope</button>
+    <div v-if="loading" class="loading">Casting horoscope...</div>
+    <div v-if="!loading && horoscope">
+      <h2>{{ zodiac }}</h2>
+      <p>{{ horoscope }}</p>
+    </div>
+    <div v-if="!loading && !horoscope && errorMessage">
+      <p>{{ errorMessage }}</p>
+    </div>
+  </div>
+ <div>
+  <p>Seeking clarity on matters of love? Career? More? Presenting AIM's new horoscope feature is here to help you navigate life's twists and turns with confidence.</p>
+    <p> Select your zodiac sign in the designated field and click "Get Horoscope" to and harness the power of the stars!</p>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="../js/horoscopeJS.js"></script>
+</body>
+</html>

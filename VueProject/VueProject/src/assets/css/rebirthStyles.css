@@ -1,0 +1,24 @@
+/**********************************************************************
+*Original Author:      Anthony Patterson *
+*Date Created:                 5/08/2024 *
+*Version:                              1 *
+*Date Last Modified:           5/08/2024 *
+*Modified by:          Anthony Patterson *
+*Modification log:                       *
+***-
+
+******************************************************************** */
+body {
+    padding: 20px;
+  }
+
+  #app {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  section {
+    width: 48%;
+  }

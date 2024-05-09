@@ -1,0 +1,104 @@
+/**********************************************************************
+*Original Author:      Anthony Patterson *
+*Date Created:                 4/20/2024 *
+*Version:                              2 *
+*Date Last Modified:           5/08/2024 *
+*Modified by:          Anthony Patterson *
+*Modification log:                       *
+***
+
+2- Added margin-bottom to h1, h2, and p for better spacing
+2- Changed background-color in body to a gradient
+2- Adjusted color and font-family in body
+2- Updated color of nav links on hover
+2- Adjusted color and hover color for links
+2- Added margin-top to button for separation from other elements
+2- Adjusted padding and font-size for button
+******************************************************************** */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6a0dad, #ff4500);
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #0099cc;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: lightgreen;
+  }
+  
+  #app {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .loading {
+    font-style: italic;
+    color: gray;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #ffd700;
+  }
+  
+  a:hover {
+    color: #646cff;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; 
+    margin-left: 20px;
+  }
+  
+  button:hover {
+    background-color: #4a0072;
+  }
+  
