@@ -1,0 +1,10 @@
+body { 
+    background-color: slategrey;
+    color: gainsboro;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav a:hover {
+    background-color: #0ff;
+    color: #000;
+  }
+  
