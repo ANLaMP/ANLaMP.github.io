@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the document -->
+    <title>Anthony Patterson- Portfolio</title>
+    <meta name="author" content="Anthony Patterson">
+    <meta charset="UTF-8">
+    <meta name="description" content="Anthony Patterson Software app designer Boise Idaho">
+    <meta name="keywords" content="client-side software developer programmer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- Link to Google Fonts (Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- Title for the page -->
+  
+
+    <!-- Header section with navigation links -->
+    <header>
+        <nav>
+            <ul>                
+                <li><a href="./Index.html">Home</a></li>
+                <li><a href="./Experience.html">Skills</a></li>
+                <li><a href="./Samples.html">Samples</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <h1>Samples of My Work</h1>
+    <!-- Portfolio section with project samples -->
+    <section id="portfolio">
+        <!-- Section heading -->
+
+        <!-- Project container with individual projects -->
+        <div class="project-container">
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="./images/pro1.jpg" alt="PacificTrailsResort">
+                <h3>Pacific Trails Resort</h3>
+                <a href="https://anlamp.github.io/PacificTrailsResort/PacificTrailsResort/index.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <img src="./images/pro3.jpeg" alt="City Farmer">
+                <h3>City Farmer</h3>
+                <a href="https://anlamp.github.io/Student_CityFarmerAssets/Student_CityFarmerAssets/Student_CityFarmerAssets/cf_index.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="./images/resppro.jpeg" alt="ResponsiveLayouts">
+                <h3>Responsive Layouts</h3>
+                <a href="ANLaMP.github.io/ResponsiveLayouts/ResponsiveLayouts/Student-Page217/holmesRWD.html" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <section id="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="./images/lilly.png" alt="Slide 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/aim.png" alt="Slide 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/gym.png" alt="Slide 3">
+                </div>
+            </div>
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+        </section>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                let currentSlide = 0;
+    
+                const totalSlides = $('.carousel-slide').length;
+        
+                const showSlide = (index) => {
+                    $('.carousel-slide').hide();
+                    $('.carousel-slide').eq(index).show();
+                };
+        
+                showSlide(currentSlide);
+        
+                $('.prev').click(function () {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    showSlide(currentSlide);
+                });
+        
+                $('.next').click(function () {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    showSlide(currentSlide);
+                });
+            });
+        </script>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright notice -->
+        <p>&copy; 2023 Anthony Patterson. All rights reserved.</p>
+
+        <!-- Footer icons with links to GitHub and LinkedIn -->
+        <div class="footer-icons">
+            <a href="https://github.com/" target="_blank"><img src="./images/githubLogo.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkdinLogo.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
